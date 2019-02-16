@@ -5,6 +5,9 @@
 *.so
 *.dylib
 
+# do not push dependencies
+vendor/
+
 # Test binary, build with `go test -c`
 *.test
 

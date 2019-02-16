@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gorilla/mux"
-	"github/wsdt/VID-Card-Backend/routes/get/getTest"
+	"VID-Card-Backend/routes/get/getTest"
 )
 
 func defineRoutes(router *mux.Router)  {
