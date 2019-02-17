@@ -1,13 +1,14 @@
 package main
 
 import (
-	"log"
-	"net/http"
+	. "VID-Card-Backend/controllers/errorHandling"
+	. "VID-Card-Backend/routes/v1/_config"
 	"github.com/gorilla/mux"
+	"net/http"
 )
 
 func main() {
 	router := mux.NewRouter()
 	defineRoutes(router)
-	log.Fatal(http.ListenAndServe(":8080", router))
+	LogErr(http.ListenAndServe(ApiPort, router))
 }
