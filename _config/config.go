@@ -5,6 +5,7 @@ import (
 	"github.com/tkanos/gonfig"
 )
 
+// TODO: Change port to 465 for tls, currently 587 without (but works)
 type ConfigMail struct {
 	Address string
 	Pwd string

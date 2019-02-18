@@ -6,6 +6,7 @@ import (
 	. "github.com/VID-Card-Backend/controllers/errorHandling"
 	. "github.com/VID-Card-Backend/models/routeResponse"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"net/smtp"
 )
@@ -16,6 +17,9 @@ type VerificationMailRes struct {
 type VerificationMailReq struct {
 	Email string
 }
+
+var config = _config.GetConfigMail()
+var auth = smtp.PlainAuth("", config.Address, config.Pwd, config.Server)
 
 func SendVerificationMail(w http.ResponseWriter, r *http.Request) {
 	var t VerificationMailReq
@@ -32,8 +36,18 @@ func SendVerificationMail(w http.ResponseWriter, r *http.Request) {
 	SendResponse(respObj, w)
 }
 
+func isMailServerAccessible() {
+	println("isMailServerAccessible: Dialing.. "+config.Server+config.Port)
+	_, err := smtp.Dial(config.Server+config.Port)
+	if err != nil {
+		log.Fatal(err)
+	} else {
+		println("isMailServerAccessible: Mail-Server is alive.")
+	}
+}
+
 func sendMail(targetAddress string) bool {
-	var config = _config.GetConfigMail()
+	isMailServerAccessible()
 
 	msg := "From: "+config.Address+"\n"+
 		"To: "+targetAddress+"\n"+
@@ -43,8 +57,8 @@ func sendMail(targetAddress string) bool {
 	println("CRED: "+config.Server+config.Port+" ,, "+config.Address+" // "+config.Pwd)
 	// TODO: Create random link and send with mail. (when user clicks on it, then save into db)
 
-	auth := smtp.PlainAuth("", config.Address, config.Pwd, config.Server)
-	err := smtp.SendMail(config.Server+config.Port,auth, config.Address, []string{targetAddress}, []byte(msg))
+	err := smtp.SendMail(config.Server+config.Port, auth, config.Address, []string{targetAddress}, []byte(msg))
+	println("sendMail: E-Mail has been sent.")
 	LogErr(err)
 	return err == nil
 }
