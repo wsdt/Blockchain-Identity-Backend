@@ -7,6 +7,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+// TODO: http://go-database-sql.org/modifying.html
+
 var DB = initializeDb()
 var config = _config.GetConfigDb()
 
