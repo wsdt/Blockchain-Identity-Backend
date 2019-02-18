@@ -1,12 +1,13 @@
 # Binaries for programs and plugins
-*.exe
-*.exe~
 *.dll
 *.so
 *.dylib
 
+# PUSH EXE and LINUX BINARIES
+
 # do not push secrets
 _config/
+.idea/
 
 # do not push dependencies
 vendor/
