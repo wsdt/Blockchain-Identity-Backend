@@ -1,12 +1,14 @@
 package routeResponse
 
 import (
-	. "VID-Card-Backend/controllers/errorHandling"
-	. "VID-Card-Backend/routes/v1/_config"
 	"encoding/json"
+	"github.com/VID-Card-Backend/_config"
+	. "github.com/VID-Card-Backend/controllers/errorHandling"
 	"net/http"
 	"time"
 )
+
+var config = _config.GetConfigApi()
 
 type RouteResponse struct {
 	ApiVersion     string
@@ -17,7 +19,7 @@ type RouteResponse struct {
 
 func CreateRouteResp(value json.RawMessage) RouteResponse {
 	return RouteResponse{
-		ApiVersion:     ApiVersion,
+		ApiVersion:     config.Version,
 		ReqSatisfiedOn: time.Now(),
 		Value:          value,
 	}

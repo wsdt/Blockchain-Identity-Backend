@@ -1,7 +1,7 @@
 package showStatus
 
 import (
-	. "VID-Card-Backend/models/routeResponse"
+	. "github.com/VID-Card-Backend/models/routeResponse"
 	"net/http"
 )
 
