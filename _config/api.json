@@ -1,5 +1,0 @@
-{
-  "Version": "v1",
-  "Port": ":8080",
-  "BaseRoute": "/api/v1"
-}
