@@ -3,7 +3,7 @@
 *.so
 *.dylib
 
-# PUSH EXE and LINUX BINARIES
+# PUSH EXE and LINUX BINARIESrv
 
 # do not push secrets
 _config/
