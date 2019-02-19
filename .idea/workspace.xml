@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="17875e83-0b16-4008-bc33-da537a120d52" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config_TEMPLATE/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/globalConfig/globalConfig.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config_TEMPLATE/mail.json" beforeDir="false" afterPath="$PROJECT_DIR$/_config_TEMPLATE/mail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v1/post/oauthToken/oauthToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1/post/oauthToken/oauthToken.go" afterDir="false" />
-    </list>
+    <list default="true" id="17875e83-0b16-4008-bc33-da537a120d52" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +25,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/router.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/routeResponse/routeResponse.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <element signature="e#23#168#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -69,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/globalConfig/globalConfig.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+            <state relative-caret-position="16">
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
               <folding>
                 <element signature="e#17#112#0" expanded="true" />
               </folding>
@@ -112,21 +109,21 @@
         <option value="$PROJECT_DIR$/_config/db.json" />
         <option value="$PROJECT_DIR$/_config/mail.go" />
         <option value="$PROJECT_DIR$/_config_TEMPLATE/db.json" />
-        <option value="$PROJECT_DIR$/models/routeResponse/routeResponse.go" />
         <option value="$PROJECT_DIR$/_config/mail.json" />
         <option value="$PROJECT_DIR$/_config/config.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/_config/sql/db.sql" />
         <option value="$PROJECT_DIR$/db/databaseMgr.go" />
-        <option value="$PROJECT_DIR$/router.go" />
         <option value="$PROJECT_DIR$/sql/db.sql" />
         <option value="$PROJECT_DIR$/_config_TEMPLATE/config.go" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/_config_TEMPLATE/mail.json" />
-        <option value="$PROJECT_DIR$/routes/v1/post/sendVerificationMail/sendVerificationMail.go" />
         <option value="$PROJECT_DIR$/routes/v1/post/oauthToken/oauthToken.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/controllers/globalConfig/globalConfig.go" />
+        <option value="$PROJECT_DIR$/router.go" />
+        <option value="$PROJECT_DIR$/models/routeResponse/routeResponse.go" />
+        <option value="$PROJECT_DIR$/routes/v1/post/sendVerificationMail/sendVerificationMail.go" />
       </list>
     </option>
   </component>
@@ -214,6 +211,12 @@
             <path>
               <item name="VID-Card-Backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="VID-Card-Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="routeResponse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VID-Card-Backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VID-Card-Backend" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,7 +264,7 @@
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550589787294" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550592451351" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
@@ -418,12 +421,12 @@
       <workItem from="1550349677046" duration="27000" />
       <workItem from="1550506229663" duration="11990000" />
       <workItem from="1550527019513" duration="3100000" />
-      <workItem from="1550567311414" duration="12642000" />
+      <workItem from="1550567311414" duration="13415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37443000" />
+    <option name="totallyTimeSpent" value="38216000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,9 +438,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13154362" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27184466" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -451,7 +455,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.30028328" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3037249" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.66855526" />
@@ -532,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/routeResponse/routeResponse.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sql/db.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -563,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config_TEMPLATE/api.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -591,19 +581,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/v1/post/sendVerificationMail/sendVerificationMail.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/v1/post/oauthToken/oauthToken.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding>
             <element signature="e#20#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/globalConfig/globalConfig.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#17#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#14#269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -615,12 +618,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/globalConfig/globalConfig.go">
+    <entry file="file://$PROJECT_DIR$/routes/v1/post/sendVerificationMail/sendVerificationMail.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="51">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/routeResponse/routeResponse.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="e#17#112#0" expanded="true" />
+            <element signature="e#23#168#0" expanded="true" />
           </folding>
         </state>
       </provider>
