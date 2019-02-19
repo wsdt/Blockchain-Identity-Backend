@@ -5,6 +5,7 @@ import (
 	"github.com/tkanos/gonfig"
 )
 
+// TODO: Change port to 465 for tls, currently 587 without (but works)
 type ConfigMail struct {
 	Address string
 	Pwd string
@@ -14,8 +15,8 @@ type ConfigMail struct {
 var configMail ConfigMail = ConfigMail{}
 func GetConfigMail() ConfigMail {
 	if configMail == (ConfigMail{}) { // is configMail empty?
-		errorHandling.LogErr(gonfig.GetConf("./mail.json", &configMail))
-		print("getConfigMail: Reparsed mail.json.")
+		errorHandling.LogErr(gonfig.GetConf("./_config/mail.json", &configMail))
+		println("getConfigMail: Reparsed mail.json.")
 	}
 	return configMail
 }
@@ -28,8 +29,8 @@ type ConfigApi struct {
 var configApi ConfigApi = ConfigApi{}
 func GetConfigApi() ConfigApi {
 	if configApi == (ConfigApi{}) { // is configMail empty?
-		errorHandling.LogErr(gonfig.GetConf("./api.json", &configApi))
-		print("getConfigApi: Reparsed api.json.")
+		errorHandling.LogErr(gonfig.GetConf("./_config/api.json", &configApi))
+		println("getConfigApi: Reparsed api.json.")
 	}
 	return configApi
 }
@@ -45,8 +46,8 @@ type ConfigDb struct {
 var configDb ConfigDb = ConfigDb{}
 func GetConfigDb() ConfigDb {
 	if configDb == (ConfigDb{}) { // is configDb empty?
-		errorHandling.LogErr(gonfig.GetConf("./db.json", &configDb))
-		print("getConfigDb: Reparsed db.json.")
+		errorHandling.LogErr(gonfig.GetConf("./_config/db.json", &configDb))
+		println("getConfigDb: Reparsed db.json.")
 	}
 	return configDb
 }
