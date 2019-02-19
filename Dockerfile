@@ -11,4 +11,6 @@ COPY VID-Card-Backend /
 # Copy configs
 COPY ./_config /
 
+EXPOSE 8080
+
 CMD ["/VID-Card-Backend"]
