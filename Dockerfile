@@ -1,16 +1,23 @@
-FROM scratch
-MAINTAINER Kevin A. Riedl "k.riedl@codeing.io"
+FROM alpine:3.6 as alpine
 
 # IMPORTANT NOTE:
-# Please ensure the Linux binary has been compiled recently and is not deprecated.
 # Additionally, you must configure all .json-Files in ./_config/ to make this docker image work.
+
+MAINTAINER Kevin A. Riedl "k.riedl@codeing.io"
+
+RUN apk add -U --no-cache ca-certificates
+
+FROM scratch
+ENTRYPOINT []
+WORKDIR /
+COPY --from=alpine /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+
 
 # Copy binary into image
 COPY VID-Card-Backend /
 
 # Copy configs
-COPY ./_config /
+COPY ./_config /_config
 
-EXPOSE 8080
 
 CMD ["/VID-Card-Backend"]
