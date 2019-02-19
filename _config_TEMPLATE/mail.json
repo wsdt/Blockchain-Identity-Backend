@@ -1,6 +1,6 @@
 {
   "Address": "no-reply@codeing.io",
   "Pwd": "",
-  "Port": ":465",
+  "Port": ":587",
   "Server": "ssl0.ovh.net"
 }

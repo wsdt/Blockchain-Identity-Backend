@@ -28,7 +28,7 @@ func OAuthToken(w http.ResponseWriter, r *http.Request) {
 		isTokenValid:isValid,
 	}
 	if isValid {
-		// TODO: Hash, encrypt save into db
+		// TODO: Hash, encrypt save into db, decode json web token
 		// currently unencrypted
 		// return successful response http
 		println("OAuthToken: Token valid. Saving into db.")

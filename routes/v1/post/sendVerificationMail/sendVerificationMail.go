@@ -2,8 +2,8 @@ package sendVerificationMail
 
 import (
 	"encoding/json"
-	"github.com/VID-Card-Backend/_config"
 	. "github.com/VID-Card-Backend/controllers/errorHandling"
+	"github.com/VID-Card-Backend/controllers/globalConfig"
 	. "github.com/VID-Card-Backend/models/routeResponse"
 	"io/ioutil"
 	"log"
@@ -18,7 +18,7 @@ type VerificationMailReq struct {
 	Email string
 }
 
-var config = _config.GetConfigMail()
+var config = globalConfig.GetConfigMail()
 var auth = smtp.PlainAuth("", config.Address, config.Pwd, config.Server)
 
 func SendVerificationMail(w http.ResponseWriter, r *http.Request) {

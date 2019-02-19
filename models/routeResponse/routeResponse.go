@@ -2,13 +2,13 @@ package routeResponse
 
 import (
 	"encoding/json"
-	"github.com/VID-Card-Backend/_config"
 	. "github.com/VID-Card-Backend/controllers/errorHandling"
+	"github.com/VID-Card-Backend/controllers/globalConfig"
 	"net/http"
 	"time"
 )
 
-var config = _config.GetConfigApi()
+var config = globalConfig.GetConfigApi()
 
 type RouteResponse struct {
 	ApiVersion     string
